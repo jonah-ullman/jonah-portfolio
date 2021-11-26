@@ -13,7 +13,7 @@
   overflow: hidden;
 
   &::before {
-    background: #00ABE7;
+    background: $blue-medium;
     content: '';
     height: 100%;
     position: absolute;
