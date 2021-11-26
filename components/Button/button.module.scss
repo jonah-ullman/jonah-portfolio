@@ -1,0 +1,47 @@
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  &::before {
+    background: #00ABE7;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s all ease-in-out;
+    z-index: -1;
+  }
+
+  &::after {
+    background: #0081AF;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  &:hover {
+    // background: #00ABE7;
+    // border-color: #00ABE7;
+
+    &::before {
+      transform : translateX(0);
+      transition: 0.3s all ease-in-out;
+    }
+
+  }
+}
