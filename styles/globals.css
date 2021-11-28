@@ -21,7 +21,7 @@ body {
 
 body::after {
   background-color: #EAD2AC;
-  width: 100vw;
+  width: 200vw;
   height: 100vh;
   position: fixed;
   transform: rotate(45deg);
@@ -30,4 +30,10 @@ body::after {
 
 h1 {
   color: #272727;
+}
+
+.swatch {
+  height: 40px;
+  width: 40px;
+  margin: 20px;
 }

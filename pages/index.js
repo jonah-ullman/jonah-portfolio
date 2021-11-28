@@ -39,6 +39,14 @@ export default function Home() {
         <Button {...buttonConfigSmall}/>
         <Button {...buttonConfigMedium}/>
         <Button {...buttonConfigLarge}/>
+        <div className="swatch" style={{background: '#A690A4'}}></div>
+        <div className="swatch" style={{background: '#75BFCA'}}></div>
+        <div className="swatch" style={{background: '#DB6C79'}}></div>
+        <div className="swatch" style={{background: '#9C444C'}}></div>
+        <div className="swatch" style={{background: '#92374D'}}></div>
+        <div className="swatch" style={{background: '#916953'}}></div>
+        <div className="swatch" style={{background: '#9D695A'}}></div>
+        <div className="swatch" style={{background: '#632B30'}}></div>
       </main>
     </div>
   )
