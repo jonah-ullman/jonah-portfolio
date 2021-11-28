@@ -4,12 +4,26 @@ import styles from '../styles/Home.module.css'
 
 import Button from '../components/Button/button.js';
 
-const buttonConfig = {
+const buttonConfigSmall = {
     clickHandler: () => console.log('click'),
-    size: 's',
+    size: 'small',
     color: 'primary',
-    label: 'Hey There'
+    label: 'Small'
 };
+
+const buttonConfigMedium = {
+  clickHandler: () => console.log('click'),
+  size: 'medium',
+  color: 'primary',
+  label: 'Medium'
+}
+
+const buttonConfigLarge = {
+  clickHandler: () => console.log('click'),
+  size: 'large',
+  color: 'primary',
+  label: 'Large'
+}
 
 export default function Home() {
   return (
@@ -21,7 +35,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <Button {...buttonConfig}/>
+        <h1>Text here</h1>
+        <Button {...buttonConfigSmall}/>
+        <Button {...buttonConfigMedium}/>
+        <Button {...buttonConfigLarge}/>
       </main>
     </div>
   )

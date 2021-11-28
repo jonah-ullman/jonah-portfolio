@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: #EABA6B;
+}
+
+body::after {
+  background-color: #EAD2AC;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  transform: rotate(45deg);
+  content: '';
+}
+
+h1 {
+  color: #272727;
+}
