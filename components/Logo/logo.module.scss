@@ -1,0 +1,13 @@
+@import '../../styles//variables.scss';
+
+.logo {
+  border: solid 2px $c-grey-dark;
+  font-family: $ff-serif;
+  height: 60px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}

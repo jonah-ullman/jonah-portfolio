@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EABA6B;
+}
+
+body::after {
+  background-color: #EAD2AC;
+  width: 200vw;
+  height: 100vh;
+  position: fixed;
+  transform: rotate(45deg);
+  content: '';
+  z-index: -3;
+}
+
+h1 {
+  color: #272727;
+  font-family: $ff-serif;
+}
+
+.swatch {
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+}
