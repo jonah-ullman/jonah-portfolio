@@ -1,0 +1,57 @@
+@import '../../styles//variables.scss';
+
+$border-transition: 0.15s transform ease-in-out;
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  padding: 0 48px;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  color: $c-grey-dark;
+  font-family: $ff-sans;
+  margin: 0 20px;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    background: $c-grey-dark;
+    width: 100%;
+    height: 1px;
+    display: block;
+    transition: $border-transition;
+  }
+
+  &::before {
+    transform: translateX(-100%);
+  }
+
+  &::after {
+    transform: translateX(100%);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    transform: none;
+  }
+}
+
+.navButton {
+  font-family: $ff-sans;
+  margin: 0 20px;
+  color: $c-grey-dark;
+}

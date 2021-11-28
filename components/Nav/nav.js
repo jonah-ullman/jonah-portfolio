@@ -1,5 +1,5 @@
-import styles from './button.module.scss';
-import Button from '../Button/button.js';
+import styles from './nav.module.scss';
+import Logo from '../Logo/logo.js';
 
 function Nav() {
   const resumeButtonConfig = {
@@ -7,14 +7,14 @@ function Nav() {
   };
 
   return (
-    <nav>
-      <div className={styles.logo}>LOGO</div>
-      <ol className={styles.navContainer}>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Resume</a></li>
-      </ol>
+    <nav className={styles.navContainer}>
+      <Logo />
+      <ul className={styles.navItems}>
+        <li className={styles.navItem}><a href="#">About</a></li>
+        <li className={styles.navItem}><a href="#">Projects</a></li>
+        <li className={styles.navItem}><a href="#">Contact</a></li>
+        <li className={styles.navButton}><a href="#">Resume</a></li>
+      </ul>
     </nav>
   );
 }
