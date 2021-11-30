@@ -19,16 +19,6 @@ body {
   background-color: #EABA6B;
 }
 
-body::after {
-  background-color: #EAD2AC;
-  width: 200vw;
-  height: 100vh;
-  position: fixed;
-  transform: rotate(45deg);
-  content: '';
-  z-index: -3;
-}
-
 h1 {
   color: #272727;
   font-family: $ff-serif;

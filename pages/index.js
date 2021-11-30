@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 import Button from '../components/Button/button.js';
 import Nav from '../components/Nav/nav.js'
@@ -54,6 +54,10 @@ export default function Home() {
         <div className="swatch" style={{background: '#916953'}}></div>
         <div className="swatch" style={{background: '#9D695A'}}></div>
         <div className="swatch" style={{background: '#632B30'}}></div>
+
+        <span className={`${styles.mountain} ${styles.mountainOne}`}></span>
+        <span className={`${styles.mountain} ${styles.mountainTwo}`}></span>
+        <span className={`${styles.mountain} ${styles.mountainThree}`}></span>
       </main>
     </div>
   )

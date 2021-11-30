@@ -4,6 +4,10 @@
   border: solid 2px $c-grey-dark;
   font-family: $ff-serif;
   height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  min-width: 50px;
+  max-width: 50px;
   width: 50px;
   display: flex;
   justify-content: center;

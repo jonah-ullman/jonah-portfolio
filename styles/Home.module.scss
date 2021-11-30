@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -118,4 +120,37 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mountain {
+  display: block;
+  position: fixed;
+  z-index: -3;
+  bottom: 0;
+}
+
+.mountainOne {
+  border-top: solid transparent 500px;
+  border-left: solid transparent 350px;
+  border-right: solid transparent 350px;
+  border-bottom: solid $c-middle-blue 500px;
+  right: -200px;
+}
+
+.mountainTwo {
+
+  border-top: solid transparent 500px;
+  border-left: solid transparent 300px;
+  border-right: solid transparent 300px;
+  border-bottom: solid $c-lilac 400px;
+  left: -50px;
+}
+
+.mountainThree {
+  z-index: -4;
+  left: 350px;
+  border-top: solid transparent 500px;
+  border-left: solid transparent 250px;
+  border-right: solid transparent 250px;
+  border-bottom: solid $c-wheat 300px;
 }
