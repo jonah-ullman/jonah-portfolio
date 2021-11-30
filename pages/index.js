@@ -42,7 +42,7 @@ export default function Home() {
       </header>
 
       <main>
-        <h1>Jonah Ullman</h1>
+        {/* <h1>Jonah Ullman</h1>
         <Button {...buttonConfigSmall}/>
         <Button {...buttonConfigMedium}/>
         <Button {...buttonConfigLarge}/>
@@ -57,7 +57,7 @@ export default function Home() {
 
         <span className={`${styles.mountain} ${styles.mountainOne}`}></span>
         <span className={`${styles.mountain} ${styles.mountainTwo}`}></span>
-        <span className={`${styles.mountain} ${styles.mountainThree}`}></span>
+        <span className={`${styles.mountain} ${styles.mountainThree}`}></span> */}
       </main>
     </div>
   )

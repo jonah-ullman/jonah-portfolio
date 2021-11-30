@@ -16,7 +16,19 @@ a {
 }
 
 body {
-  background-color: #EABA6B;
+  background-color: $c-sunray;
+
+  &::after {
+    height: 75vh;
+    width: 150vw;
+    top: 25%;
+    content: '';
+    background: $c-wheat;
+    position: fixed;
+    left: 0;
+    transform: rotate(45deg);
+    // transform-origin: top left;
+  }
 }
 
 h1 {
